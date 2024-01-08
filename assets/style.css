@@ -1,0 +1,94 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--white);
+}
+
+:root {
+    --white: #e7eaf6;
+    --paleBlue: #a2a8d3;
+    --blue: #38598b;
+    --darkBlue: #113f67;
+    --borderStyle: .25rem solid var(--darkBlue);
+}
+
+header {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: var(--borderStyle);
+}
+
+h1 {
+    font-size: 3rem;
+    background: none;
+    color: var(--white)
+}
+
+header > img  {
+    flex: .15 1;
+    max-height: 100%;
+}
+
+#sectionLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.sectionLink {
+    font-size: 1.25rem;
+    padding: 1vw;
+    padding-bottom: 0;
+    padding-right: 1.5vw;
+    color: var(--white);
+    background-color: var(--blue);
+    border: var(--borderStyle);
+}
+
+#aboutMe > *{ 
+    font-size: 1.75rem;
+    background-color: var(--paleBlue);
+    color: var(--darkBlue);
+    border: var(--borderStyle)
+}
+
+.workCard {
+    background-color: var(--paleBlue);
+    flex: 1 1;
+    margin: 1rem;
+    padding: 1%;
+}
+
+.workCard:first-child {
+    flex-grow: 2;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--blue);
+    border: var(--borderStyle);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--paleBlue);
+}
+
+footer > * {
+    background-color: var(--blue);
+}
+
+#contactPhone {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contactPhone > * {
+    margin-right: 1rem;
+    background-color: var(--blue);
+}
